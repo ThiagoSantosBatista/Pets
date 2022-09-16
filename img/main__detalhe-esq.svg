@@ -1,3 +1,5 @@
-<svg width="21" height="4" viewBox="0 0 21 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="20" height="3" rx="1.5" transform="matrix(1 8.74228e-08 8.74228e-08 -1 0.150635 3.65552)" fill="#FFAE31"/>
+<svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="25" height="3" rx="1.5" transform="matrix(0.866025 0.5 0.5 -0.866025 0 11.0981)" fill="#FFAE31"/>
+<rect width="20" height="3" rx="1.5" transform="matrix(0.5 0.866025 0.866025 -0.5 16.6868 1.5)" fill="#FFAE31"/>
+<rect width="20" height="3" rx="1.5" transform="matrix(1 8.74228e-08 8.74228e-08 -1 1.15063 30.6555)" fill="#FFAE31"/>
 </svg>

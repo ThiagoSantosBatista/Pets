@@ -7,6 +7,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -84,7 +85,7 @@ a {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
-  margin: 0 5% 14rem;
+  margin: 0 5%;
   padding-top: 7rem;
 }
 .hero__conteudo h1 {
@@ -144,7 +145,7 @@ a {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
-  margin-bottom: 14rem;
+  padding: 14rem 0;
 }
 .sobre__img {
   display: grid;
@@ -200,7 +201,6 @@ a {
 
 .informacoes {
   background-color: #0b0c12;
-  margin-bottom: 14rem;
 }
 .informacoes-box {
   display: flex;
@@ -208,7 +208,7 @@ a {
   gap: 12rem;
   justify-content: center;
   align-items: center;
-  padding: 7rem 0;
+  padding: 6rem 0;
   margin: 0 5%;
   color: white;
 }
@@ -229,6 +229,63 @@ a {
 .informacoes__card img {
   width: 9rem;
   height: auto;
+}
+
+.servicos {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  margin: 0 5%;
+  padding: 14rem 0;
+  gap: 8rem;
+}
+.servicos__conteudo {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  gap: 2rem;
+}
+.servicos__titulo {
+  text-align: center;
+}
+.servicos__titulo h2 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+.servicos__titulo p {
+  font-size: 2.2rem;
+  max-width: 85ch;
+  line-height: 1.5;
+  margin: 0 auto;
+  color: #474d59;
+}
+.servicos__detalhe {
+  position: relative;
+}
+.servicos__detalhe img {
+  position: absolute;
+  top: -1.4rem;
+  left: -3.1rem;
+}
+.servicos__card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2.5rem;
+  font-size: 1.8rem;
+  border-radius: 3rem;
+  padding: 3rem 4.5rem;
+  max-width: 53rem;
+  color: #474d59;
+  background-color: #E6EAF0;
+  border: 0.1rem solid #6619b3;
+}
+.servicos__card h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: #0b0c12;
+}
+.servicos__card p {
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=style.css.map */

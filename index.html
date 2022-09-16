@@ -21,9 +21,9 @@
                 <a href=""><img src="/img/header__logo.svg" alt="logotipo"></a>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
-                        <li class="header__nav-item"><a href="#">Home</a></li>
-                        <li class="header__nav-item"><a href="#">Sobre</a></li>
-                        <li class="header__nav-item"><a href="#">Serviços</a></li>
+                        <li class="header__nav-item"><a href="#home">Home</a></li>
+                        <li class="header__nav-item"><a href="#sobre">Sobre</a></li>
+                        <li class="header__nav-item"><a href="#servicos">Serviços</a></li>
                         <li class="header__nav-item"><a href="#">Depoimentos</a></li>
                         <li class="header__nav-item"><button>Agendar</button></li>
                     </ul>
@@ -34,7 +34,7 @@
 
     <main class="main">
         <div class="container">
-            <section class="hero">
+            <section id="home" class="hero">
                 <div class="hero__conteudo">
                     <h1>A <span class="roxo">melhor clínica <img class="hero__detalhe" src="/img/hero__detalhe.svg"
                                 alt=""></span><br> para o cuidado do seu animal de estimação.</h1>
@@ -43,13 +43,13 @@
                 </div>
                 <img class="hero__img" src="/img/hero__img.jpg" alt="Cachorro">
             </section>
-            <section class="sobre">
+            <section id="sobre" class="sobre">
                 <div class="sobre__img">
                     <img class="sobre__img-cachorro" src="/img/main__cachorroImg.jpg" alt="Cachorro">
                     <img class="sobre__img-gato" src="/img/main__gatoImg.jpg" alt="Gato">
                 </div>
                 <div class="sobre__conteudo">
-                    <h2>Nossa <span class="sobre__detalhe">História <img src="/img/main__detalhe.svg" alt=""></span>
+                    <h2>Nossa <span class="sobre__detalhe">história <img src="/img/main__detalhe.svg" alt=""></span>
                     </h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis fuga voluptatem quisquam unde
                         minus facere nesciunt. Nulla, beatae? Ipsa voluptatibus debitis alias expedita eius possimus
@@ -84,13 +84,48 @@
             </div>
         </section>
         <div class="container">
-            <section class="servicos">
+            <section id="servicos" class="servicos">
                 <div class="servicos__titulo">
+                    <h2><span class="servicos__detalhe">Serviços <img src="/img/main__detalhe-esq.svg" alt=""></span> que nós oferecemos.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet soluta laborum minus architecto
+                        adipisci. Ad eos tenetur itaque culpa quam!</p>
                 </div>
-                <div class="servicos__card">
-    
+                <div class="servicos__conteudo">
+                    <div class="servicos__card">
+                        <img src="/img/servicos__banho.svg" alt="">
+                        <div class="servicos__card-conteudo">
+                            <h3>Banho</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam quis nesciunt non
+                                possimus repellendus, quibusdam eius quasi fugit.</p>
+                        </div>
+                    </div>
+                    <div class="servicos__card">
+                        <img src="/img/servicos__tosa.svg" alt="">
+                        <div class="servicos__card-conteudo">
+                            <h3>Tosa</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam quis nesciunt non
+                                possimus repellendus, quibusdam eius quasi fugit.</p>
+                        </div>
+                    </div>
+                    <div class="servicos__card">
+                        <img src="/img/servicos__hospedagem.svg" alt="">
+                        <div class="servicos__card-conteudo">
+                            <h3>hospedagem</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam quis nesciunt non
+                                possimus repellendus, quibusdam eius quasi fugit.</p>
+                        </div>
+                    </div>
+                    <div class="servicos__card">
+                        <img src="/img/servicos__clinica.svg" alt="">
+                        <div class="servicos__card-conteudo">
+                            <h3>Clínica Veterinária</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam quis nesciunt non
+                                possimus repellendus, quibusdam eius quasi fugit.</p>
+                        </div>
+                    </div>
                 </div>
-            </section>
+        </div>
+        </section>
         </div>
     </main>
 
