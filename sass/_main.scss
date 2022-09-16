@@ -1,0 +1,118 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin: 0 5% 14rem;
+  padding-top: 7rem;
+  &__conteudo {
+    h1 {
+      font-family: $font-titulo;
+      font-size: 5.8rem;
+      line-height: 1.2;
+      font-weight: 600;
+      letter-spacing: -0.1rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 3rem;
+      color: #474d59;
+      line-height: 1.5;
+      font-weight: 400;
+      margin-bottom: 5rem;
+    }
+  }
+  &__detalhe {
+    position: absolute;
+    top: -0.8rem;
+    right: -4.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  &__img {
+    width: 58rem;
+    height: calc(100vh - 7.5rem);
+    max-height: 70rem;
+    object-fit: cover;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    box-shadow: 0 0.4rem 0.2rem rgba(255, 174, 49, 0.25);
+  }
+}
+.roxo {
+  position: relative;
+  color: #6619b3;
+  font-family: $font-titulo;
+}
+.main__btn {
+  font-size: 2rem;
+  padding: 2rem 5.5rem;
+  border-radius: 3rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #6619b3;
+  border: none;
+  color: white;
+  box-shadow: 0 0.4rem 0.2rem rgba(102, 25, 179, 0.25);
+}
+
+.sobre {
+  margin: 0 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 14rem;
+  &__img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    &-cachorro {
+      height: 50rem;
+      width: auto;
+      grid-column: 1/3;
+      grid-row: 1/3;
+      border-radius: 3rem;
+      box-shadow: 0 0.4rem 0.2rem rgba(255, 174, 49, 0.25);
+      &:hover {
+        z-index: 1;
+      }
+    }
+    &-gato {
+      height: 30rem;
+      width: auto;
+      grid-column: 2/4;
+      grid-row: 2/3;
+      border-left: 0.3rem solid white;
+      border-top: 0.3rem solid white;
+      border-radius: 3rem;
+      box-shadow: 0 0.4rem 0.2rem rgba(102, 25, 179, 0.25);
+    }
+  }
+  &__conteudo {
+    h2 {
+      font-family: $font-titulo;
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 2rem;
+      color: #474d59;
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+      &:nth-child(3) {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+  &__detalhe {
+    font-family: $font-titulo;
+    position: relative;
+    img {
+      position: absolute;
+      top: -0.8rem;
+      right: -3.1rem;
+    }
+  }
+}

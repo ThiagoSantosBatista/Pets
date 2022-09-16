@@ -1,15 +1,17 @@
+$font: 'Roboto', sans-serif;
+$font-titulo: 'Nunito', sans-serif;
+
 *, *::after, *::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font;
 }
 html{
     font-size: 62.5%;
 }
 body{
     min-height: 100vh;
-    position: relative;
     color: #0B0C12;
     background: #FAFCFF;
 }

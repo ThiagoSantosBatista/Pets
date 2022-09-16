@@ -1,5 +1,5 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 7%;
+    margin: 0 5%;
     height: 100%;
   }
   &__nav {
@@ -23,19 +23,22 @@
       a {
         text-transform: uppercase;
         letter-spacing: 0.1rem;
-        font-weight: 600;
+        font-family: $font-titulo;
+        font-weight: bold;
         color: #0b0c12;
       }
       button {
         cursor: pointer;
+        font-family: $font-titulo;
         padding: 1.3rem 2.6rem;
         font-size: 1.5rem;
         border-radius: 3rem;
-        font-weight: 600;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
         text-transform: uppercase;
         background: none;
         color: #6619b3;
-        border: 0.1rem solid #6619b3;
+        border: 0.15rem solid #6619b3;
       }
     }
   }
