@@ -73,6 +73,8 @@
       width: auto;
       grid-column: 1/3;
       grid-row: 1/3;
+      border-left: 0.3rem solid white;
+      border-top: 0.3rem solid white;
       border-radius: 3rem;
       box-shadow: 0 0.4rem 0.2rem rgba(255, 174, 49, 0.25);
       &:hover {
@@ -113,6 +115,39 @@
       position: absolute;
       top: -0.8rem;
       right: -3.1rem;
+    }
+  }
+}
+
+.informacoes {
+  background-color: #0b0c12;
+  margin-bottom: 14rem;
+  &-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12rem;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 0;
+    margin: 0 5%;
+    color: white;
+  }
+  &__card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 2rem;
+    p {
+      font-size: 2rem;
+    }
+    .roxo {
+      color: #b675ff;
+      font-size: 3rem;
+    }
+    img{
+        width: 9rem;
+        height: auto;
     }
   }
 }
