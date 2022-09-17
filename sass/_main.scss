@@ -294,7 +294,7 @@
   margin: 24rem 5% 10rem;
   padding: 0 6rem;
   border-radius: 3rem;
-  background-color: black;
+  background-color: #0b0c12;
   &-box {
     display: flex;
     justify-content: space-between;
@@ -313,6 +313,7 @@
       width: 100%;
       margin-top: 1rem;
       height: 0.5rem;
+      border-radius: 3rem;
       background: #fafcff;
     }
   }

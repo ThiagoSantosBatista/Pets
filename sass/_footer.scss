@@ -1,0 +1,54 @@
+.footer {
+  color: white;
+  background: #0b0c12;
+  &-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 5%;
+    padding: 6rem 0;
+  }
+  &__conteudo {
+    display: grid;
+    grid-template-rows: auto repeat(5, auto);
+    gap: 1.5rem;
+    font-size: 1.7rem;
+    h3 {
+      margin-top: 4rem;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      font-family: $font-titulo;
+      letter-spacing: 0.1rem;
+      margin-bottom: 0.8rem;
+    }
+    a {
+      color: white;
+      font-size: 1.7rem;
+    }
+    &-info{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        img{
+            justify-self: center;
+            height: 3rem;
+            width: 3rem;
+           
+        }
+    }
+  }
+  .redes{
+    display: flex;
+    gap: 2rem;
+    img{
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+  }
+  &__logo{
+    width: 18rem;
+    height: auto;
+  }
+}
