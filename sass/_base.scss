@@ -10,6 +10,7 @@ $font-titulo: 'Nunito', sans-serif;
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
 }
 body{
     min-height: 100vh;
