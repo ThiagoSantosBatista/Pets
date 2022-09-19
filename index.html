@@ -19,7 +19,7 @@
         <div class="container">
             <div class="header-box">
                 <a href="#home">
-                    <img src="/img/header__logo.svg" alt="logotipo">
+                    <img src="/img/header__logo.svg" alt="logotipo" width="119" height="48">
                 </a>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
@@ -29,6 +29,11 @@
                         <li class="header__nav-item"><a href="#depoimentos">Depoimentos</a></li>
                         <li class="header__nav-item"><button>Agendar</button></li>
                     </ul>
+                    <button class="mobile-menu" aria-expanded="false" aria-label="Abrir menu">
+                        <span class="mobile-menu__linha-1"></span>
+                        <span class="mobile-menu__linha-2"></span>
+                        <span class="mobile-menu__linha-3"></span>
+                    </button>
                 </nav>
             </div>
         </div>
@@ -40,7 +45,8 @@
                 <div class="hero__conteudo">
                     <header>
                         <h1>A <span class="hero__roxo">melhor clínica <img class="hero__detalhe"
-                                    src="img/hero__detalhe.svg" alt=""></span><br> para o cuidado do seu animal de
+                                    src="img/hero__detalhe.svg" alt="" width="45" height="45"></span><br> para o cuidado
+                            do seu animal de
                             estimação.</h1>
                     </header>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -52,13 +58,15 @@
                 </picture>
             </section>
             <section id="sobre" class="sobre">
-                <div class="sobre__img">
-                    <img class="sobre__img-cachorro" src="img/main__cachorroImg.jpg" alt="Cachorro">
-                    <img class="sobre__img-gato" src="img/main__gatoImg.jpg" alt="Gato">
-                </div>
+                <picture class="sobre__img">
+                    <source media="(max-width: 600px)" srcset="img/sobre__img.jpg">
+                    <source media="(max-width: 1170px)" srcset="img/sobre__mobileImg.jpg">
+                    <img src="img/sobre__img.jpg" alt="Cachorro">
+                </picture>
                 <div class="sobre__conteudo">
                     <header>
-                        <h2>Nossa <span class="sobre__detalhe">História <img src="img/main__detalhe.svg" alt=""></span>
+                        <h2>Nossa <span class="sobre__detalhe">História <img src="img/main__detalhe.svg" alt=""
+                                    width="30" height="31"></span>
                         </h2>
                     </header>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis fuga voluptatem quisquam unde
@@ -75,19 +83,19 @@
             <div class="container">
                 <ul class="informacoes-box">
                     <li class="informacoes__card">
-                        <img src="img/icon__profissionais.svg" alt="">
+                        <img src="img/icon__profissionais.svg" alt="" width="90" height="90">
                         <p><span class="informacoes__roxo">100+</span><br>Profissionais</p>
                     </li>
                     <li class="informacoes__card">
-                        <img src="img/icon__clientes.svg" alt="">
+                        <img src="img/icon__clientes.svg" alt="" width="90" height="90">
                         <p><span class="informacoes__roxo">8000+</span><br>Clientes Felizes</p>
                     </li>
                     <li class="informacoes__card">
-                        <img src="img/icon__premios.svg" alt="">
+                        <img src="img/icon__premios.svg" alt="" width="90" height="90">
                         <p><span class="informacoes__roxo">35+</span><br>Prêmios</p>
                     </li>
                     <li class="informacoes__card">
-                        <img src="img/icon__mercado.svg" alt="">
+                        <img src="img/icon__mercado.svg" alt="" width="90" height="90">
                         <p><span class="informacoes__roxo">23+</span><br>Anos de Mercado</p>
                     </li>
                 </ul>
@@ -96,14 +104,15 @@
         <div class="container">
             <section id="servicos" class="servicos">
                 <header class="servicos__titulo">
-                    <h2><span class="servicos__detalhe">Serviços <img src="img/main__detalhe-esq.svg" alt=""></span>
+                    <h2><span class="servicos__detalhe">Serviços <img src="img/main__detalhe-esq.svg" alt="" width="30"
+                                height="31"></span>
                         que nós oferecemos.</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet soluta laborum minus architecto
                         adipisci. Ad eos tenetur itaque culpa quam!</p>
                 </header>
                 <ul class="servicos__conteudo">
                     <li class="servicos__card">
-                        <img src="img/servicos__banho.svg" alt="">
+                        <img src="img/servicos__banho.svg" alt="" width="80" height="82">
                         <div class="servicos__card-conteudo">
                             <h3>Banho</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam quis nesciunt non
@@ -111,7 +120,7 @@
                         </div>
                     </li>
                     <li class="servicos__card">
-                        <img src="img/servicos__tosa.svg" alt="">
+                        <img src="img/servicos__tosa.svg" alt="" width="80" height="82">
                         <div class="servicos__card-conteudo">
                             <h3>Tosa</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam quis nesciunt non
@@ -119,7 +128,7 @@
                         </div>
                     </li>
                     <li class="servicos__card servicos__card-hospedagem">
-                        <img src="img/servicos__hospedagem.svg" alt="">
+                        <img src="img/servicos__hospedagem.svg" alt="" width="80" height="82">
                         <div class="servicos__card-conteudo">
                             <h3>hospedagem</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam quis nesciunt non
@@ -127,7 +136,7 @@
                         </div>
                     </li>
                     <li class="servicos__card">
-                        <img src="img/servicos__clinica.svg" alt="">
+                        <img src="img/servicos__clinica.svg" alt="" width="80" height="82">
                         <div class="servicos__card-conteudo">
                             <h3>Clínica Veterinária</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam quis nesciunt non
@@ -138,7 +147,8 @@
             </section>
             <article id="depoimentos" class="depoimentos">
                 <header class="depoimentos__titulo">
-                    <h2><span class="depoimentos__detalhe">O <img src="img/main__detalhe-esq.svg" alt=""></span> que
+                    <h2><span class="depoimentos__detalhe">O <img src="img/main__detalhe-esq.svg" alt="" width="30"
+                                height="31"></span> que
                         nossos clientes estão dizendo.</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis numquam ea modi? Maiores,
                         repudiandae vitae?</p>
@@ -251,32 +261,69 @@
             </section>
         </div>
     </main>
-
     <footer class="footer">
         <div class="container">
             <div class="footer-box">
-                <div class="footer__redes">
-                    <img class="footer__logo" src="img/footer__logo.svg" alt="#home">
+                <nav class="footer__redes">
+                    <a href="#home">
+                        <img class="footer__logo" src="img/footer__logo.svg" alt="logotipo">
+                    </a>
                     <ul class="redes">
-                        <li><img src="img/icon__instagram.svg" alt=""></li>
-                        <li><img src="img/icon__twitter.svg" alt=""></li>
-                        <li><img src="img/icon__facebook.svg" alt=""></li>
+                        <li><a href="#"><svg width="45" height="50" viewBox="0 0 45 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_27_5289)">
+                                        <path
+                                            d="M22.5 19.791C21.4404 19.7914 20.4047 20.0972 19.5239 20.6698C18.6431 21.2424 17.9567 22.0561 17.5515 23.008C17.1462 23.9598 17.0404 25.0071 17.2474 26.0174C17.4543 27.0277 17.9648 27.9557 18.7142 28.684C19.4636 29.4123 20.4182 29.9082 21.4575 30.109C22.4967 30.3099 23.5739 30.2066 24.5528 29.8123C25.5317 29.418 26.3684 28.7503 26.957 27.8938C27.5456 27.0372 27.8598 26.0302 27.8598 25C27.8588 23.6185 27.2937 22.2939 26.2887 21.3171C25.2837 20.3404 23.921 19.7915 22.5 19.791ZM35.0267 15.7871C34.7539 15.1151 34.342 14.5047 33.8166 13.9939C33.2911 13.483 32.6633 13.0826 31.9721 12.8174C29.8627 12.0078 24.8404 12.1895 22.5 12.1895C20.1596 12.1895 15.1423 12.001 13.0269 12.8174C12.3357 13.0826 11.7079 13.483 11.1824 13.9939C10.657 14.5047 10.2451 15.1151 9.97232 15.7871C9.14062 17.8379 9.32645 22.7256 9.32645 24.999C9.32645 27.2725 9.14062 32.1543 9.97634 34.2119C10.2491 34.8839 10.661 35.4943 11.1864 36.0052C11.7119 36.516 12.3397 36.9165 13.0309 37.1816C15.1403 37.9912 20.1626 37.8096 22.504 37.8096C24.8454 37.8096 29.8607 37.998 31.9761 37.1816C32.6673 36.9165 33.2952 36.516 33.8206 36.0052C34.3461 35.4943 34.7579 34.8839 35.0307 34.2119C35.8694 32.1611 35.6766 27.2734 35.6766 25C35.6766 22.7266 35.8694 17.8457 35.0307 15.7881L35.0267 15.7871ZM22.5 33.0078C20.871 33.0078 19.2785 32.5382 17.924 31.6583C16.5695 30.7783 15.5138 29.5277 14.8904 28.0645C14.267 26.6012 14.1038 24.9911 14.4217 23.4378C14.7395 21.8844 15.5239 20.4575 16.6758 19.3376C17.8277 18.2177 19.2954 17.455 20.8931 17.1461C22.4909 16.8371 24.147 16.9957 25.652 17.6017C27.1571 18.2078 28.4434 19.2342 29.3485 20.5511C30.2535 21.868 30.7366 23.4162 30.7366 25C30.7379 26.052 30.5258 27.0938 30.1123 28.066C29.6989 29.0381 29.0922 29.9214 28.3271 30.6652C27.562 31.4091 26.6535 31.9989 25.6536 32.4009C24.6537 32.8028 23.582 33.0091 22.5 33.0078ZM31.0761 18.5254C30.6958 18.5256 30.324 18.4161 30.0077 18.2109C29.6914 18.0056 29.4449 17.7137 29.2992 17.3722C29.1535 17.0307 29.1153 16.6548 29.1894 16.2922C29.2635 15.9296 29.4465 15.5964 29.7153 15.3349C29.9841 15.0734 30.3267 14.8953 30.6997 14.8231C31.0726 14.7509 31.4592 14.7879 31.8106 14.9293C32.162 15.0707 32.4623 15.3103 32.6736 15.6177C32.8849 15.9251 32.9977 16.2865 32.9977 16.6562C32.9987 16.9018 32.9499 17.1451 32.854 17.3722C32.7581 17.5994 32.6171 17.8059 32.4389 17.9799C32.2608 18.1539 32.049 18.292 31.8159 18.3863C31.5827 18.4806 31.3327 18.5292 31.0801 18.5293L31.0761 18.5254ZM40.1786 3.125H4.82143C3.54271 3.125 2.31636 3.61886 1.41216 4.49794C0.50797 5.37701 0 6.5693 0 7.8125L0 42.1875C0 43.4307 0.50797 44.623 1.41216 45.5021C2.31636 46.3811 3.54271 46.875 4.82143 46.875H40.1786C41.4573 46.875 42.6836 46.3811 43.5878 45.5021C44.492 44.623 45 43.4307 45 42.1875V7.8125C45 6.5693 44.492 5.37701 43.5878 4.49794C42.6836 3.61886 41.4573 3.125 40.1786 3.125ZM38.4589 31.4453C38.3294 33.9482 37.7417 36.166 35.8624 37.9883C33.983 39.8105 31.7039 40.3936 29.1325 40.5127C26.4797 40.6582 18.5263 40.6582 15.8735 40.5127C13.2991 40.3867 11.026 39.8145 9.14364 37.9883C7.26127 36.1621 6.66964 33.9434 6.5471 31.4453C6.39743 28.8652 6.39743 21.1318 6.5471 18.5547C6.67667 16.0518 7.25725 13.834 9.14364 12.0117C11.03 10.1895 13.3092 9.61328 15.8735 9.49414C18.5263 9.34863 26.4797 9.34863 29.1325 9.49414C31.7069 9.62012 33.9871 10.1924 35.8624 12.0186C37.7377 13.8447 38.3364 16.0635 38.4589 18.5664C38.6086 21.1367 38.6086 28.8633 38.4589 31.4453Z"
+                                            fill="#A55BF0" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_27_5289">
+                                            <rect width="45" height="50" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+
+                        </li>
+                        <li><a href="#"><svg width="45" height="50" viewBox="0 0 45 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M40.1786 3.125H4.82143C2.1596 3.125 0 5.22461 0 7.8125V42.1875C0 44.7754 2.1596 46.875 4.82143 46.875H40.1786C42.8404 46.875 45 44.7754 45 42.1875V7.8125C45 5.22461 42.8404 3.125 40.1786 3.125ZM35.2667 18.6328C35.2868 18.9062 35.2868 19.1895 35.2868 19.4629C35.2868 27.9297 28.6574 37.6855 16.5435 37.6855C12.8069 37.6855 9.34152 36.6309 6.42857 34.8145C6.96094 34.873 7.47321 34.8926 8.01562 34.8926C11.0993 34.8926 13.9319 33.877 16.192 32.1582C13.2991 32.0996 10.8683 30.2539 10.0346 27.7148C11.0491 27.8613 11.9632 27.8613 13.0078 27.5977C9.99442 27.002 7.73437 24.4238 7.73437 21.3086V21.2305C8.60826 21.709 9.63281 22.002 10.7076 22.041C9.804 21.4567 9.06326 20.6639 8.55148 19.7335C8.03969 18.8032 7.77278 17.7641 7.77455 16.709C7.77455 15.5176 8.09598 14.4238 8.66853 13.4766C11.9129 17.3633 16.7846 19.9023 22.2489 20.1758C21.3147 15.8301 24.6596 12.3047 28.6775 12.3047C30.5759 12.3047 32.2835 13.0762 33.4888 14.3262C34.9754 14.0527 36.4018 13.5156 37.6674 12.7832C37.1752 14.2676 36.1406 15.5176 34.7746 16.3086C36.1004 16.1719 37.3862 15.8105 38.5714 15.3125C37.6775 16.5918 36.5525 17.7246 35.2667 18.6328Z"
+                                        fill="#A55BF0" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li><a href="#"><svg width="45" height="50" viewBox="0 0 45 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_27_5293)">
+                                        <path
+                                            d="M40.1786 3.125H4.82143C3.54271 3.125 2.31636 3.61886 1.41216 4.49794C0.50797 5.37701 0 6.5693 0 7.8125L0 42.1875C0 43.4307 0.50797 44.623 1.41216 45.5021C2.31636 46.3811 3.54271 46.875 4.82143 46.875H18.6077V32.001H12.2796V25H18.6077V19.6641C18.6077 13.5947 22.3242 10.2422 28.0165 10.2422C30.7426 10.2422 33.5933 10.7148 33.5933 10.7148V16.6719H30.4523C27.3576 16.6719 26.3923 18.5391 26.3923 20.4541V25H33.301L32.1961 32.001H26.3923V46.875H40.1786C41.4573 46.875 42.6836 46.3811 43.5878 45.5021C44.492 44.623 45 43.4307 45 42.1875V7.8125C45 6.5693 44.492 5.37701 43.5878 4.49794C42.6836 3.61886 41.4573 3.125 40.1786 3.125Z"
+                                            fill="#A55BF0" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_27_5293">
+                                            <rect width="45" height="50" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </div>
-                <div class="footer__conteudo">
+                </nav>
+                <nav class="footer__conteudo">
                     <span class="linha linha-topo">&nbsp;</span>
                     <span class="linha linha-fundo">&nbsp;</span>
-                    <ul class="footer__conteudo-list">
+                    <ul class="footer__informacoes">
                         <li>
                             <h3>Contate-nos</h3>
                         </li>
-                        <li class="footer__conteudo-info"><img src="img/icon__phone.svg" alt="">
+                        <li class="footer__conteudo-info"><img src="img/icon__phone.svg" alt="telefone">
                             <p>(11) 9999-9999</p>
                         </li>
-                        <li class="footer__conteudo-info"><img src="img/icon__email.svg" alt="">
+                        <li class="footer__conteudo-info"><img src="img/icon__email.svg" alt="localização">
                             <p>suporte@pets.com</p>
                         </li>
-                        <li class="footer__conteudo-info"><img src="img/icon__localizacao.svg" alt="">
+                        <li class="footer__conteudo-info"><img src="img/icon__localizacao.svg" alt="email">
                             <p>São Paulo - SP, 2100</p>
                         </li>
                     </ul>
@@ -298,6 +345,26 @@
                         <li><a href="#">Termos</a></li>
                         <li><a href="#">Privacidade</a></li>
                     </ul>
+                </nav>
+                <div class="footer__me">
+                    <p>Desenvolvido por <span class="footer__roxo">Thiago Batista</span>.</p>
+                    <div class="contatos">
+                        <a href="https://github.com/ThiagoSantosBatista" target="_blank"><svg width="35" height="40"
+                                viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M31.25 2.5H3.75C1.67969 2.5 0 4.17969 0 6.25V33.75C0 35.8203 1.67969 37.5 3.75 37.5H31.25C33.3203 37.5 35 35.8203 35 33.75V6.25C35 4.17969 33.3203 2.5 31.25 2.5ZM21.6641 32.4766C21.0078 32.5938 20.7656 32.1875 20.7656 31.8516C20.7656 31.4297 20.7812 29.2734 20.7812 27.5312C20.7812 26.3125 20.375 25.5391 19.8984 25.1328C22.7891 24.8125 25.8359 24.4141 25.8359 19.4219C25.8359 18 25.3281 17.2891 24.5 16.375C24.6328 16.0391 25.0781 14.6562 24.3672 12.8594C23.2812 12.5234 20.7969 14.2578 20.7969 14.2578C19.7656 13.9688 18.6484 13.8203 17.5469 13.8203C16.4453 13.8203 15.3281 13.9688 14.2969 14.2578C14.2969 14.2578 11.8125 12.5234 10.7266 12.8594C10.0156 14.6484 10.4531 16.0312 10.5938 16.375C9.76562 17.2891 9.375 18 9.375 19.4219C9.375 24.3906 12.2891 24.8125 15.1797 25.1328C14.8047 25.4688 14.4688 26.0469 14.3516 26.875C13.6094 27.2109 11.7109 27.7891 10.5781 25.7891C9.86719 24.5547 8.58594 24.4531 8.58594 24.4531C7.32031 24.4375 8.5 25.25 8.5 25.25C9.34375 25.6406 9.9375 27.1406 9.9375 27.1406C10.6953 29.4609 14.3203 28.6797 14.3203 28.6797C14.3203 29.7656 14.3359 31.5313 14.3359 31.8516C14.3359 32.1875 14.1016 32.5938 13.4375 32.4766C8.28125 30.75 4.67188 25.8438 4.67188 20.1094C4.67188 12.9375 10.1562 7.49219 17.3281 7.49219C24.5 7.49219 30.3125 12.9375 30.3125 20.1094C30.3203 25.8438 26.8203 30.7578 21.6641 32.4766ZM14 27.7031C13.8516 27.7344 13.7109 27.6719 13.6953 27.5703C13.6797 27.4531 13.7812 27.3516 13.9297 27.3203C14.0781 27.3047 14.2188 27.3672 14.2344 27.4688C14.2578 27.5703 14.1562 27.6719 14 27.7031ZM13.2578 27.6328C13.2578 27.7344 13.1406 27.8203 12.9844 27.8203C12.8125 27.8359 12.6953 27.75 12.6953 27.6328C12.6953 27.5313 12.8125 27.4453 12.9688 27.4453C13.1172 27.4297 13.2578 27.5156 13.2578 27.6328ZM12.1875 27.5469C12.1562 27.6484 12 27.6953 11.8672 27.6484C11.7188 27.6172 11.6172 27.5 11.6484 27.3984C11.6797 27.2969 11.8359 27.25 11.9688 27.2812C12.125 27.3281 12.2266 27.4453 12.1875 27.5469ZM11.2266 27.125C11.1562 27.2109 11.0078 27.1953 10.8906 27.0781C10.7734 26.9766 10.7422 26.8281 10.8203 26.7578C10.8906 26.6719 11.0391 26.6875 11.1562 26.8047C11.2578 26.9062 11.2969 27.0625 11.2266 27.125ZM10.5156 26.4141C10.4453 26.4609 10.3125 26.4141 10.2266 26.2969C10.1406 26.1797 10.1406 26.0469 10.2266 25.9922C10.3125 25.9219 10.4453 25.9766 10.5156 26.0938C10.6016 26.2109 10.6016 26.3516 10.5156 26.4141ZM10.0078 25.6562C9.9375 25.7266 9.82031 25.6875 9.73438 25.6094C9.64844 25.5078 9.63281 25.3906 9.70312 25.3359C9.77344 25.2656 9.89062 25.3047 9.97656 25.3828C10.0625 25.4844 10.0781 25.6016 10.0078 25.6562ZM9.48438 25.0781C9.45312 25.1484 9.35156 25.1641 9.26562 25.1094C9.16406 25.0625 9.11719 24.9766 9.14844 24.9062C9.17969 24.8594 9.26562 24.8359 9.36719 24.875C9.46875 24.9297 9.51562 25.0156 9.48438 25.0781Z"
+                                    fill="#FCFCFC" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/thiago-santos-batista/" target="_blank"><svg width="35"
+                                height="40" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M32.5 2.5H2.49219C1.11719 2.5 0 3.63281 0 5.02344V34.9766C0 36.3672 1.11719 37.5 2.49219 37.5H32.5C33.875 37.5 35 36.3672 35 34.9766V5.02344C35 3.63281 33.875 2.5 32.5 2.5ZM10.5781 32.5H5.39062V15.7969H10.5859V32.5H10.5781ZM7.98438 13.5156C6.32031 13.5156 4.97656 12.1641 4.97656 10.5078C4.97656 8.85156 6.32031 7.5 7.98438 7.5C9.64062 7.5 10.9922 8.85156 10.9922 10.5078C10.9922 12.1719 9.64844 13.5156 7.98438 13.5156ZM30.0234 32.5H24.8359V24.375C24.8359 22.4375 24.7969 19.9453 22.1406 19.9453C19.4375 19.9453 19.0234 22.0547 19.0234 24.2344V32.5H13.8359V15.7969H18.8125V18.0781H18.8828C19.5781 16.7656 21.2734 15.3828 23.7969 15.3828C29.0469 15.3828 30.0234 18.8438 30.0234 23.3438V32.5Z"
+                                    fill="#FCFCFC" />
+                            </svg>
+                        </a>
+
+                    </div>
                 </div>
             </div>
         </div>

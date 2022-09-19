@@ -9,36 +9,58 @@
     padding: 6rem 0;
     margin: 0 5%;
   }
+  h3 {
+    font-weight: 800;
+    font-size: 2.2rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    font-family: $font-titulo;
+    text-transform: uppercase;
+  }
+  a,
+  p {
+    font-size: 1.9rem;
+    color: $color--b2;
+  }
   &__redes {
     display: grid;
     grid-template-rows: auto auto;
     gap: 1.5rem;
     grid-column: 1/-1;
   }
+  &__informacoes {
+    display: grid;
+    grid-template-rows: auto repeat(4, auto);
+    gap: 1.8rem;
+    width: 21.7rem;
+  }
   &__conteudo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
     gap: 10rem;
+    padding: 0 3rem;
+    position: relative;
     .linha {
-      position: absolute;
+        height: 0.2rem;
+        width: 100%;
+        border-radius: 3rem;
+        position: absolute;
+      background: $color--b2;
+      &-topo {
+        top: -3rem;
+      }
+      &-fundo {
+        bottom: -3rem;
+      }
     }
     &-list {
       display: grid;
       grid-template-rows: auto repeat(5, auto);
-      gap: 1.5rem;
-      h3 {
-        font-weight: 800;
-        font-size: 2rem;
-        letter-spacing: 0.1rem;
-        margin-bottom: 1rem;
-        font-family: $font-titulo;
-        text-transform: uppercase;
-      }
-      a,
-      p {
-        font-size: 1.7rem;
-        color: $color--b2;
+      gap: 1.8rem;
+      width: 21.7rem;
+      a:hover{
+        text-decoration: underline;
       }
     }
     &-info {
@@ -49,21 +71,75 @@
       gap: 2rem;
       img {
         justify-self: center;
-        height: 3rem;
-        width: 3rem;
+        height: 2.5rem;
+        width: 2.5rem;
       }
     }
   }
   .redes {
     display: flex;
     gap: 2rem;
-    img {
-      height: 4.5rem;
-      width: 4.5rem;
+    a {
+      &:hover path{
+        fill: $color--r2;
+      }
+      svg{
+        width: 4.5rem;
+        height: 5rem;
+      }
     }
   }
   &__logo {
     width: 18rem;
     height: auto;
+  }
+  &__me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    p {
+      font-size: 1.5rem;
+    }
+    .contatos {
+      a {
+        margin: 0 0.5rem;
+        :hover path {
+          fill: $color--r3;
+        }
+        svg {
+          height: 3.5rem;
+          width: auto;
+        }
+      }
+    }
+  }
+  &__roxo{
+    color: $color--r3;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .footer {
+    &__conteudo {
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+    a,
+    p {
+      font-size: 1.7rem;
+    }
+  }
+}
+@media screen and (max-width: 620px) {
+  .footer {
+    &__conteudo {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
   }
 }

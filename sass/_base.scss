@@ -2,12 +2,20 @@ $font: 'Roboto', sans-serif;
 $font-titulo: 'Nunito', sans-serif;
 $color--p1: #474D59;
 $color--p2: #0B0C12;
-$color--b1: #FAFCFF;
-$color--b2: #E6EAF0;
+$color--b1: #FCFCFC;
+$color--b2: #F7F7F7;
 $color--r1: #B675FF;
 $color--r2: #6619B3;
+$color--r3: #A55BF0;
+$color--r4: #8F42DB;
 $color--l1: #FFF896;
 $color--l2: #FFAE31;
+
+:root{
+    --h1: 5.8rem;
+    --h2: 4rem;
+    --hero-p: 3.2rem;
+}
 
 *, *::after, *::before{
     margin: 0;
