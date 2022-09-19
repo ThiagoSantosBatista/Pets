@@ -1,5 +1,13 @@
 $font: 'Roboto', sans-serif;
 $font-titulo: 'Nunito', sans-serif;
+$color--p1: #474D59;
+$color--p2: #0B0C12;
+$color--b1: #FAFCFF;
+$color--b2: #E6EAF0;
+$color--r1: #B675FF;
+$color--r2: #6619B3;
+$color--l1: #FFF896;
+$color--l2: #FFAE31;
 
 *, *::after, *::before{
     margin: 0;
@@ -14,12 +22,13 @@ html{
 }
 body{
     min-height: 100vh;
-    color: #0B0C12;
-    background: #FAFCFF;
+    color: $color--p2;
+    background: $color--b1;
 }
 img{
     display: block;
     max-width: 100%;
+    pointer-events: none;
 }
 li{
     list-style: none;
@@ -30,6 +39,7 @@ a{
 }
 .container{
     max-width: 144rem;
-    margin: 0 auto;
     height: 100%;
+    margin: 0 auto;
 }
+

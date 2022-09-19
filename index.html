@@ -18,7 +18,9 @@
     <header class="header">
         <div class="container">
             <div class="header-box">
-                <a href=""><img src="/img/header__logo.svg" alt="logotipo"></a>
+                <a href="#home">
+                    <img src="/img/header__logo.svg" alt="logotipo">
+                </a>
                 <nav class="header__nav">
                     <ul class="header__nav-list">
                         <li class="header__nav-item"><a href="#home">Home</a></li>
@@ -37,13 +39,17 @@
             <section id="home" class="hero">
                 <div class="hero__conteudo">
                     <header>
-                        <h1>A <span class="roxo">melhor clínica <img class="hero__detalhe" src="img/hero__detalhe.svg"
-                                    alt=""></span><br> para o cuidado do seu animal de estimação.</h1>
+                        <h1>A <span class="hero__roxo">melhor clínica <img class="hero__detalhe"
+                                    src="img/hero__detalhe.svg" alt=""></span><br> para o cuidado do seu animal de
+                            estimação.</h1>
                     </header>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <button class="main__btn">Contate-nos</button>
                 </div>
-                <img class="hero__img" src="img/hero__img.jpg" alt="Cachorro">
+                <picture>
+                    <source media="(max-width: 1170px)" srcset="img/hero__mobileImg.jpg">
+                    <img class="hero__img" src="img/hero__img.jpg" alt="Cachorro">
+                </picture>
             </section>
             <section id="sobre" class="sobre">
                 <div class="sobre__img">
@@ -53,8 +59,8 @@
                 <div class="sobre__conteudo">
                     <header>
                         <h2>Nossa <span class="sobre__detalhe">História <img src="img/main__detalhe.svg" alt=""></span>
+                        </h2>
                     </header>
-                    </h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis fuga voluptatem quisquam unde
                         minus facere nesciunt. Nulla, beatae? Ipsa voluptatibus debitis alias expedita eius possimus
                         omnis cumque laboriosam nihil exercitationem!</p>
@@ -70,19 +76,19 @@
                 <ul class="informacoes-box">
                     <li class="informacoes__card">
                         <img src="img/icon__profissionais.svg" alt="">
-                        <p><span class="roxo">100+</span><br> Profissionais</p>
+                        <p><span class="informacoes__roxo">100+</span><br>Profissionais</p>
                     </li>
                     <li class="informacoes__card">
                         <img src="img/icon__clientes.svg" alt="">
-                        <p><span class="roxo">8000+</span><br> Clientes Felizes</p>
+                        <p><span class="informacoes__roxo">8000+</span><br>Clientes Felizes</p>
                     </li>
                     <li class="informacoes__card">
                         <img src="img/icon__premios.svg" alt="">
-                        <p><span class="roxo">35+</span><br> Prêmios</p>
+                        <p><span class="informacoes__roxo">35+</span><br>Prêmios</p>
                     </li>
                     <li class="informacoes__card">
                         <img src="img/icon__mercado.svg" alt="">
-                        <p><span class="roxo">23+</span><br> Anos de Mercado</p>
+                        <p><span class="informacoes__roxo">23+</span><br>Anos de Mercado</p>
                     </li>
                 </ul>
             </div>
@@ -112,7 +118,7 @@
                                 possimus repellendus, quibusdam eius quasi fugit.</p>
                         </div>
                     </li>
-                    <li class="servicos__card">
+                    <li class="servicos__card servicos__card-hospedagem">
                         <img src="img/servicos__hospedagem.svg" alt="">
                         <div class="servicos__card-conteudo">
                             <h3>hospedagem</h3>
@@ -132,8 +138,8 @@
             </section>
             <article id="depoimentos" class="depoimentos">
                 <header class="depoimentos__titulo">
-                    <h2>O que nossos clientes estão <span class="depoimentos__detalhe">dizendo. <img
-                                src="img/main__detalhe.svg" alt=""></span></h2>
+                    <h2><span class="depoimentos__detalhe">O <img src="img/main__detalhe-esq.svg" alt=""></span> que
+                        nossos clientes estão dizendo.</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis numquam ea modi? Maiores,
                         repudiandae vitae?</p>
                 </header>
@@ -144,7 +150,7 @@
                                 alt="Foto do autor do depoimento">
                             <div class="depoimentos__card-conteudo">
                                 <h3>Jefferson Santos</h3>
-                                <h4>Pinscher</h4>
+                                <h4>Rottweiler</h4>
                                 <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur error ipsum
                                     ipsa
                                     neque, eveniet deserunt deleniti. Perferendis, recusandae temporibus.</q>
@@ -156,7 +162,7 @@
                                 alt="Foto do autor do depoimento">
                             <div class="depoimentos__card-conteudo">
                                 <h3>Roberta Cristina</h3>
-                                <h4>Pinscher</h4>
+                                <h4>Shih Tzu</h4>
                                 <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur error ipsum
                                     ipsa
                                     neque, eveniet deserunt deleniti. Perferendis, recusandae temporibus.</q>
@@ -164,11 +170,47 @@
                             </div>
                         </li>
                         <li class="depoimentos__card">
+                            <img class="depoimentos__pessoa" src="img/depoimentos__img3.jpg"
+                                alt="Foto do autor do depoimento">
+                            <div class="depoimentos__card-conteudo">
+                                <h3>Thalita Silva</h3>
+                                <h4>Golden Retriever</h4>
+                                <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur error ipsum
+                                    ipsa
+                                    neque, eveniet deserunt deleniti. Perferendis, recusandae temporibus.</q>
+                                <img src="img/depoimentos__5estrelas.svg" alt="classificação de 5 estrelas">
+                            </div>
+                        </li>
+                        <li class="depoimentos__card">
                             <img class="depoimentos__pessoa" src="img/depoimentos__img1.jpg"
                                 alt="Foto do autor do depoimento">
                             <div class="depoimentos__card-conteudo">
-                                <h3>Thalles Santos</h3>
-                                <h4>Pinscher</h4>
+                                <h3>Jefferson Santos</h3>
+                                <h4>Rottweiler</h4>
+                                <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur error ipsum
+                                    ipsa
+                                    neque, eveniet deserunt deleniti. Perferendis, recusandae temporibus.</q>
+                                <img src="img/depoimentos__5estrelas.svg" alt="classificação de 5 estrelas">
+                            </div>
+                        </li>
+                        <li class="depoimentos__card">
+                            <img class="depoimentos__pessoa" src="img/depoimentos__img2.jpg"
+                                alt="Foto do autor do depoimento">
+                            <div class="depoimentos__card-conteudo">
+                                <h3>Roberta Cristina</h3>
+                                <h4>Shih Tzu</h4>
+                                <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur error ipsum
+                                    ipsa
+                                    neque, eveniet deserunt deleniti. Perferendis, recusandae temporibus.</q>
+                                <img src="img/depoimentos__4estrelas.svg" alt="classificação de 4 estrelas">
+                            </div>
+                        </li>
+                        <li class="depoimentos__card">
+                            <img class="depoimentos__pessoa" src="img/depoimentos__img3.jpg"
+                                alt="Foto do autor do depoimento">
+                            <div class="depoimentos__card-conteudo">
+                                <h3>Thalita Silva</h3>
+                                <h4>Golden Retriever</h4>
                                 <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur error ipsum
                                     ipsa
                                     neque, eveniet deserunt deleniti. Perferendis, recusandae temporibus.</q>
@@ -177,9 +219,12 @@
                         </li>
                     </ul>
                     <div class="indicador">
-                        <button class="indicador__btn active"></button>
-                        <button class="indicador__btn"></button>
-                        <button class="indicador__btn"></button>
+                        <button class="indicador__btn active">&nbsp;</button>
+                        <button class="indicador__btn">&nbsp;</button>
+                        <button class="indicador__btn">&nbsp;</button>
+                        <button class="indicador__btn indicador__btn-extra">&nbsp;</button>
+                        <button class="indicador__btn indicador__btn-extra">&nbsp;</button>
+                        <button class="indicador__btn indicador__btn-extra">&nbsp;</button>
                     </div>
                 </div>
             </article>
@@ -210,46 +255,50 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-box">
-                <div class="footer__conteudo">
-                    <img class="footer__logo" src="img/footer__logo.svg" alt="">
+                <div class="footer__redes">
+                    <img class="footer__logo" src="img/footer__logo.svg" alt="#home">
                     <ul class="redes">
                         <li><img src="img/icon__instagram.svg" alt=""></li>
                         <li><img src="img/icon__twitter.svg" alt=""></li>
                         <li><img src="img/icon__facebook.svg" alt=""></li>
                     </ul>
                 </div>
-                <ul class="footer__conteudo">
-                    <li>
-                        <h3>links</h3>
-                    </li>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#depoimentos">Depoimentos</a></li>
-                </ul>
-                <ul class="footer__conteudo">
-                    <li>
-                        <h3>Informações</h3>
-                    </li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Ajuda</a></li>
-                    <li><a href="#">Termos</a></li>
-                    <li><a href="#">Privacidade</a></li>
-                </ul>
-                <ul class="footer__conteudo">
-                    <li>
-                        <h3>Contate-nos</h3>
-                    </li>
-                    <li class="footer__conteudo-info"><img src="img/icon__phone.svg" alt="">
-                        <p>(11) 9999-9999</p>
-                    </li>
-                    <li class="footer__conteudo-info"><img src="img/icon__email.svg" alt="">
-                        <p>suporte@pets.com</p>
-                    </li>
-                    <li class="footer__conteudo-info"><img src="img/icon__localizacao.svg" alt="">
-                        <p>São Paulo - SP, 2100</p>
-                    </li>
-                </ul>
+                <div class="footer__conteudo">
+                    <span class="linha linha-topo">&nbsp;</span>
+                    <span class="linha linha-fundo">&nbsp;</span>
+                    <ul class="footer__conteudo-list">
+                        <li>
+                            <h3>Contate-nos</h3>
+                        </li>
+                        <li class="footer__conteudo-info"><img src="img/icon__phone.svg" alt="">
+                            <p>(11) 9999-9999</p>
+                        </li>
+                        <li class="footer__conteudo-info"><img src="img/icon__email.svg" alt="">
+                            <p>suporte@pets.com</p>
+                        </li>
+                        <li class="footer__conteudo-info"><img src="img/icon__localizacao.svg" alt="">
+                            <p>São Paulo - SP, 2100</p>
+                        </li>
+                    </ul>
+                    <ul class="footer__conteudo-list">
+                        <li>
+                            <h3>links</h3>
+                        </li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                    </ul>
+                    <ul class="footer__conteudo-list">
+                        <li>
+                            <h3>Informações</h3>
+                        </li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Ajuda</a></li>
+                        <li><a href="#">Termos</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
