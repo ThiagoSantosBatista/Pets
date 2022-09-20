@@ -12,20 +12,39 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    margin: 0 5%;
+    margin: 0 var(--mg-lados);
   }
   &__nav {
     &-list {
       display: flex;
       align-items: center;
-      gap: 3rem;
-      font-size: 1.5rem;
+      gap: 1rem;
+      font-size: 1.6rem;
       a {
+        padding: 1rem;
         letter-spacing: 0.1rem;
         font-weight: bold;
+        position: relative;
         font-family: $font-titulo;
         text-transform: uppercase;
         color: $color--p2;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0%;
+          height: 0.3rem;
+          transition: 0.3s;
+          transform: translateX(-50%);
+          background: $color--r2;
+        }
+        &:hover {
+          color: $color--r2;
+          &::after {
+            width: calc(100% - 1.5rem);
+          }
+        }
       }
       button {
         font-size: 1.5rem;
@@ -35,20 +54,20 @@
         cursor: pointer;
         background: none;
         font-weight: bold;
-        transition: .2s;
+        transition: 0.2s;
         font-family: $font-titulo;
         text-transform: uppercase;
         color: $color--r2;
         border: 0.15rem solid $color--r2;
-        &:hover{
-            color: $color--b1;
-            background-color: $color--r2;
-
+        &:hover {
+          color: $color--b1;
+          background-color: $color--r2;
         }
       }
     }
   }
 }
+
 .mobile-menu {
   display: none;
   border: none;
@@ -62,56 +81,4 @@
   border-radius: 0.5rem;
   width: 3.6rem;
   background: $color--p2;
-}
-
-@media screen and (max-width: 1000px) {
-  .mobile-menu {
-    display: block;
-    position: relative;
-  }
-  .header__nav-list {
-    display: none;
-  }
-  .header__nav.ativo {
-    & .header__nav-list {
-      position: absolute;
-      top: 8rem;
-      right: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      gap: 3rem;
-      height: 100vh;
-      width: 100%;
-      z-index: 9;
-      padding-top: 3rem;
-      overflow-y: auto;
-      text-align: center;
-      background: $color--p2;
-    }
-    .header__nav-item {
-      a {
-        padding: 1rem 2rem;
-        color: $color--b1;
-      }
-      button {
-        padding: 1.8rem 4rem;
-        background-color: $color--r2;
-        color: $color--b1;
-      }
-    }
-    .mobile-menu__linha-1 {
-      display: none;
-    }
-    .mobile-menu__linha-2 {
-      transform: rotate(135deg);
-      transition: 0.3s;
-    }
-    .mobile-menu__linha-3 {
-      position: absolute;
-      transform: rotate(-135deg);
-      top: 0;
-      transition: 0.3s;
-    }
-  }
 }

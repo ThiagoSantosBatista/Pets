@@ -7,7 +7,7 @@
     justify-items: center;
     gap: 6rem;
     padding: 6rem 0;
-    margin: 0 5%;
+    margin: 0 var(--mg-lados);
   }
   h3 {
     font-weight: 800;
@@ -32,20 +32,18 @@
     display: grid;
     grid-template-rows: auto repeat(4, auto);
     gap: 1.8rem;
-    width: 21.7rem;
   }
   &__conteudo {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    justify-items: center;
     gap: 10rem;
     padding: 0 3rem;
     position: relative;
     .linha {
-        height: 0.2rem;
-        width: 100%;
-        border-radius: 3rem;
-        position: absolute;
+      height: 0.2rem;
+      width: 100%;
+      border-radius: 3rem;
+      position: absolute;
       background: $color--b2;
       &-topo {
         top: -3rem;
@@ -58,8 +56,7 @@
       display: grid;
       grid-template-rows: auto repeat(5, auto);
       gap: 1.8rem;
-      width: 21.7rem;
-      a:hover{
+      a:hover {
         text-decoration: underline;
       }
     }
@@ -80,10 +77,10 @@
     display: flex;
     gap: 2rem;
     a {
-      &:hover path{
+      &:hover path {
         fill: $color--r2;
       }
-      svg{
+      svg {
         width: 4.5rem;
         height: 5rem;
       }
@@ -115,31 +112,7 @@
       }
     }
   }
-  &__roxo{
+  &__roxo {
     color: $color--r3;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  .footer {
-    &__conteudo {
-      grid-template-columns: 1fr 1fr;
-      gap: 5rem;
-    }
-    h3 {
-      font-size: 2rem;
-    }
-    a,
-    p {
-      font-size: 1.7rem;
-    }
-  }
-}
-@media screen and (max-width: 620px) {
-  .footer {
-    &__conteudo {
-      grid-template-columns: 1fr;
-      gap: 3rem;
-    }
   }
 }
