@@ -644,6 +644,9 @@ a {
   .main__btn {
     font-size: 1.6rem;
   }
+  .atendimento {
+    margin: 10rem var(--mg-lados);
+  }
   .atendimento-box {
     justify-content: center;
   }
@@ -662,6 +665,9 @@ a {
   .header__nav-list {
     display: none;
   }
+  .header__nav-list a::after {
+    display: none;
+  }
   .header__nav.ativo .header__nav-list {
     position: absolute;
     top: 7rem;
@@ -669,11 +675,11 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    gap: 3rem;
+    gap: 4rem;
     height: 100vh;
     width: 100%;
     z-index: 9;
-    padding-top: 3rem;
+    padding-top: 5rem;
     overflow-y: auto;
     text-align: center;
     background: #0b0c12;
