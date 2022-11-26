@@ -1,7 +1,7 @@
 :root {
-  --h1: 5.8rem;
-  --h2: 4rem;
-  --hero-p: 3.2rem;
+  --h1: 4.8rem;
+  --h2: 3rem;
+  --hero-p: 2.5rem;
   --mg-lados: 5%;
 }
 
@@ -134,7 +134,7 @@ a {
 .main__btn {
   font-size: 2rem;
   letter-spacing: 0.1rem;
-  padding: 2rem 5.5rem;
+  padding: 1.5rem 3.5rem;
   border-radius: 3rem;
   border: none;
   cursor: pointer;
@@ -746,7 +746,6 @@ a {
   :root {
     --h1: 4.8rem;
     --h2: 3.2rem;
-    --hero-p: 2.5rem;
   }
   .hero__conteudo {
     max-width: 100ch;
